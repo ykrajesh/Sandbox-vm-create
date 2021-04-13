@@ -99,27 +99,4 @@ resource "azurerm_virtual_machine_extension" "vm_extension_install_iis" {
     }
 SETTINGS
 }
-/*
-  provisioner "remote-exec" {
-    command = "D:\\services.ps1 -Schedule"
-    interpreter = ["PowerShell"]
-    connection {
-      type     = "winrm"
-      user     = "vmadmin"
-      password = "Welcome@1234"
-    }
-  }
-  
-  provisioner "remote-exec" {
-    connection {
-      type     = "winrm"
-      user     = "vmadmin"
-      password = "Welcome@1234"
-    }
-
-inline = [
-         "powershell -ExecutionPolicy Unrestricted -File D:\\services.ps1 -Schedule"
-        ]
-      }
-*/
 
