@@ -1,0 +1,1 @@
+terraform file is under the terraform files direcory 
